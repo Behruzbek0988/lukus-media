@@ -1,0 +1,1437 @@
+<!DOCTYPE html>
+<html lang="uz" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>LUX MEDIA | Premium Dasturlash & Kinematik Videografiya Portfoliosi</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="LUX MEDIA (Behruzbek) — Zamonaviy veb-ishlanmalar (min. $100), 4K video montaj, tadbirlar va tug'ilgan kunlar syomkasi (800 000 so'mdan), Logo yasash ($20+) va sifatli albomlar.">
+  <meta name="keywords" content="LUX MEDIA, Behruzbek, Dasturlash, Videografiya, Tadbirlar syomkasi, Tug'ilgan kun, Logo dizayn, Albom, Web Development, Portfolio, EmailJS">
+  <meta name="author" content="LUX MEDIA - Behruzbek">
+  
+  <!-- Open Graph / Social Media -->
+  <meta property="og:title" content="LUX MEDIA | Dasturlash & Videografiya Portfoliosi">
+  <meta property="og:description" content="Tadbirlar, tug'ilgan kunlar videografiyasi, veb dasturlash, logo va albom xizmatlari.">
+  <meta property="og:image" content="assets/images/logo.jpg">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="assets/images/logo.jpg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- EmailJS Official SDK -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ========================================================================
+       1. HEADER / TOP NAVIGATION (LUX MEDIA BRAND, LOGO & THEME SWITCHER)
+       ======================================================================== -->
+  <header class="header">
+    <div class="container nav-container">
+      <!-- Brand Logo & Name -->
+      <a href="#home" class="brand-logo" title="LUX MEDIA Bosh sahifasi">
+        <div class="brand-logo-img-wrapper">
+          <img src="assets/images/logo.jpg" alt="LUX MEDIA Logo" class="brand-logo-img">
+        </div>
+        <div class="brand-text">
+          <span class="brand-title">LUX MEDIA</span>
+          <span class="brand-subtitle">Digital & Cinematic</span>
+        </div>
+      </a>
+
+      <!-- Navigation Links -->
+      <nav class="nav-menu" id="navMenu">
+        <a href="#home" class="nav-link active">Bosh sahifa</a>
+        <a href="#about" class="nav-link">Men haqimda</a>
+        <a href="#experience" class="nav-link">Tajriba & Tadbirlar</a>
+        <a href="#skills" class="nav-link">Ko'nikmalar</a>
+        <a href="#portfolio" class="nav-link">Portfolio</a>
+        <a href="#testimonials" class="nav-link">Fikrlar & Izohlar</a>
+        <a href="#pricing" class="nav-link">Tariflar & To'lov</a>
+        <a href="#contact" class="nav-link">Bog'lanish</a>
+
+        <!-- Mobile Drawer Quick Actions -->
+        <div class="mobile-drawer-actions">
+          <button class="theme-toggle-btn" id="mobileThemeToggle" title="Tungi / Yorug' rejim">
+            <i class="fa-solid fa-sun" id="mobileThemeIcon"></i>
+          </button>
+          <button class="btn btn-payment btn-sm btn-open-payment">
+            <i class="fa-solid fa-credit-card"></i> To'lov
+          </button>
+          <a href="tel:+998947931114" class="btn btn-secondary btn-sm">
+            <i class="fa-solid fa-phone" style="color: #10b981;"></i> +998 (94) 793-11-14
+          </a>
+        </div>
+      </nav>
+
+      <!-- Nav Actions & Theme Switcher -->
+      <div class="nav-actions">
+        <!-- Theme Toggle (Dark / Light) Button -->
+        <button class="theme-toggle-btn" id="themeToggle" title="Tungi / Yorug' rejimni almashtirish" aria-label="Rejimni o'zgartirish">
+          <i class="fa-solid fa-sun" id="themeIcon"></i>
+        </button>
+
+        <!-- Direct Phone -->
+        <a href="tel:+998947931114" class="btn btn-secondary btn-sm" title="Qo'ng'iroq qilish">
+          <i class="fa-solid fa-phone" style="color: #10b981;"></i> +998 (94) 793-11-14
+        </a>
+        
+        <!-- Payment Trigger Button -->
+        <button class="btn btn-payment btn-sm btn-open-payment" title="To'lov kartalarini ko'rish">
+          <i class="fa-solid fa-credit-card"></i> To'lov
+        </button>
+        
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Menyuni ochish">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ========================================================================
+         2. HERO SECTION
+         ======================================================================== -->
+    <section class="hero-section" id="home">
+      <div class="hero-glow-1"></div>
+      <div class="hero-glow-2"></div>
+      <div class="container hero-grid">
+        <!-- Hero Text -->
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="hero-badge-pulse"></span>
+            <span>Dasturlash (min. $100) & Professional Tadbirlar Videografiyasi</span>
+          </div>
+          
+          <h1 class="hero-title">
+            G'oyalaringizni <span class="text-gold-gradient">Raqamli San'at</span> va <span class="text-silver-gradient">Mukammal Kod</span>ga Aylantiramiz
+          </h1>
+
+          <p class="hero-desc">
+            <strong>LUX MEDIA</strong> (Behruzbek) — zamonaviy veb-ishlanmalar (kamida $100), tug'ilgan kunlar va tadbirlarni 4K syomka qilish (1 kunlik 800 000 so'mdan), Logo yasash ($20+) hamda sifatli albomlar tayyorlash xizmatlarini taqdim etadi.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="tel:+998947931114" class="btn btn-primary" style="background: linear-gradient(135deg, #10b981, #059669); color: #fff; box-shadow: 0 4px 20px rgba(16, 185, 129, 0.45);" title="Bog'lanish: +998 94 793 11 14">
+              <i class="fa-solid fa-phone-volume"></i> Bog'lanish
+            </a>
+            <a href="#pricing" class="btn btn-primary">
+              <i class="fa-solid fa-rocket"></i> Tariflar & Buyurtma
+            </a>
+            <button class="btn btn-payment btn-open-payment">
+              <i class="fa-solid fa-credit-card"></i> To'lov qilish
+            </button>
+            <a href="https://t.me/Behruzbek_0875" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+              <i class="fa-brands fa-telegram" style="color: #38bdf8;"></i> @Behruzbek_0875
+            </a>
+          </div>
+
+          <!-- Live Stats Bar -->
+          <div class="hero-stats-bar">
+            <div class="stat-item">
+              <h3>800K</h3>
+              <p>1 kunlik xizmat</p>
+            </div>
+            <div class="stat-item">
+              <h3>1.6M</h3>
+              <p>2 kunlik xizmat</p>
+            </div>
+            <div class="stat-item">
+              <h3>$100+</h3>
+              <p>Dasturlash boshlang'ich</p>
+            </div>
+            <div class="stat-item">
+              <h3>$20+</h3>
+              <p>Logo yasash xizmati</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual Showcase -->
+        <div class="hero-visual-card">
+          <div class="hero-logo-showcase">
+            <div class="hero-big-logo">
+              <img src="assets/images/logo.jpg" alt="LUX MEDIA Rasmiy Emblem">
+            </div>
+            <h3 class="text-gold-gradient" style="font-size: 1.8rem; margin-bottom: 0.2rem;">LUX MEDIA</h3>
+            <p style="color: var(--text-muted); font-size: 0.85rem; letter-spacing: 0.1em; text-transform: uppercase;">Behruzbek | Developer & Videographer</p>
+          </div>
+
+          <div class="hero-visual-badges">
+            <div class="floating-badge">
+              <i class="fa-solid fa-cake-candles" style="color: #f59e0b;"></i>
+              <div class="floating-badge-text">
+                <h4>Tug'ilgan Kun & Tadbirlar Syomkasi</h4>
+                <p>1 kunlik (800 000 so'm) / 2 kunlik (1 600 000 so'm)</p>
+              </div>
+            </div>
+            <div class="floating-badge">
+              <i class="fa-solid fa-wand-magic-sparkles" style="color: #38bdf8;"></i>
+              <div class="floating-badge-text">
+                <h4>Logo Dizayn ($20+) & Albomlar</h4>
+                <p>Noyob brending va sifatiga mos albom xizmati</p>
+              </div>
+            </div>
+            <div class="floating-badge">
+              <i class="fa-solid fa-credit-card" style="color: #10b981;"></i>
+              <div class="floating-badge-text">
+                <h4>Tezkor To'lov (Humo / Visa / MasterCard)</h4>
+                <p>Karta egasi: O.B. (Behruzbek)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         3. ABOUT ME / BIZ HAQIMIZDA
+         ======================================================================== -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-user-astronaut"></i> Muallif Haqida</span>
+          <h2 class="section-title">Ijod va Texnologiya <span class="text-gold-gradient">Sintetikasi</span></h2>
+          <p class="section-subtitle">Dasturiy muhandislikning aniq mantiqi, tadbirlar videografiyasi va professional dizayn xizmatlari.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-image-card">
+            <div class="about-photo-wrap">
+              <img src="assets/images/logo.jpg" alt="LUX MEDIA Muallif Behruzbek">
+              <span class="about-experience-badge"><i class="fa-solid fa-award"></i> TOP SIFAT KAFOLATI</span>
+            </div>
+            
+            <div class="about-info-list">
+              <div class="info-box">
+                <span>MUTAXASSIS:</span>
+                <strong>Behruzbek (O.B.)</strong>
+              </div>
+              <div class="info-box">
+                <span>TELEFON:</span>
+                <strong>+998 94 793 11 14</strong>
+              </div>
+              <div class="info-box">
+                <span>TELEGRAM:</span>
+                <strong>@Behruzbek_0875</strong>
+              </div>
+              <div class="info-box">
+                <span>INSTAGRAM:</span>
+                <strong>@behruzbek.ac</strong>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-content">
+            <h3>Biznesingiz va Quvonchli Kunlaringiz Uchun <span class="text-gold-gradient">LUX Yechimlar</span></h3>
+            <p>
+              Men mijozlarimga yuqori tezlikda ishlovchi zamonaviy veb-saytlar va dasturlarni yaratib beraman, unutilmas damlari — <strong>tug'ilgan kunlar, to'y tantanalari, korporativ bayramlar va tadbirlarni</strong> 4K kinematik formatda muhrlayman hamda brendlar uchun <strong>professional logotiplar ($20+)</strong> va <strong>premium albomlar</strong> tayyorlayman.
+            </p>
+            <p>
+              Har bir loyihada individual yondashuv, zamonaviy kameralar, professional yoritish va sifatli dasturlash texnologiyalaridan foydalaniladi.
+            </p>
+
+            <div class="about-pillars">
+              <div class="pillar-item">
+                <div class="pillar-icon"><i class="fa-solid fa-gem"></i></div>
+                <div class="pillar-text">
+                  <h5>Mukammal Sifat</h5>
+                  <p>Piksel darajasigacha aniqlik va xatosiz toza kod.</p>
+                </div>
+              </div>
+              <div class="pillar-item">
+                <div class="pillar-icon"><i class="fa-solid fa-gauge-high"></i></div>
+                <div class="pillar-text">
+                  <h5>Tezkor Yetkazish</h5>
+                  <p>Montaj va saytlar belgilangan muddatda topshiriladi.</p>
+                </div>
+              </div>
+              <div class="pillar-item">
+                <div class="pillar-icon"><i class="fa-solid fa-credit-card"></i></div>
+                <div class="pillar-text">
+                  <h5>Qulay To'lov</h5>
+                  <p>Humo, Visa, MasterCard orqali onlayn to'lov.</p>
+                </div>
+              </div>
+              <div class="pillar-item">
+                <div class="pillar-icon"><i class="fa-solid fa-handshake"></i></div>
+                <div class="pillar-text">
+                  <h5>Shartnomaviy Kafolat</h5>
+                  <p>Xizmatlar shartnoma va qat'iy kelishuv asosida bajariladi.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         4. TAJRIBA & TADBIR XIZMATLARI (EVENTS & BIRTHDAYS EXPERIENCE)
+         ======================================================================== -->
+    <section class="section" id="experience" style="background: rgba(10, 15, 25, 0.2);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-champagne-glasses"></i> Keng Qamrovli Tajriba</span>
+          <h2 class="section-title">Tug'ilgan Kun va <span class="text-gold-gradient">Tadbirlar Videografiyasi</span></h2>
+          <p class="section-subtitle">Har bir quvonchli lahza va muhim marosimlar uchun professional tasvirga olish hamda dinamik montaj xizmatlari.</p>
+        </div>
+
+        <div class="skills-container">
+          <!-- Event Category 1: Tug'ilgan kunlar & Shaxsiy bayramlar -->
+          <div class="skill-category-card">
+            <div class="category-head">
+              <div class="category-icon" style="background: linear-gradient(135deg, #f59e0b, #d97706); color: #fff;">
+                <i class="fa-solid fa-cake-candles"></i>
+              </div>
+              <div>
+                <h3>Tug'ilgan Kunlar & Yubileylar</h3>
+                <p>Bolalar va kattalar tug'ilgan kunlari, oilaviy marosimlar</p>
+              </div>
+            </div>
+
+            <div class="skill-items">
+              <p style="color: var(--text-muted); font-size: 0.92rem; line-height: 1.6;">
+                Tug'ilgan kun tantanalarini boshidan oxirigacha yuqori hissiyot, tabassum va samimiy damlar bilan lentaga muhrlaymiz. Trend Reels va to'liq xotira filmi shaklida topshiriladi.
+              </p>
+              
+              <div class="about-pillars" style="margin-top: 0.5rem;">
+                <div class="pillar-item">
+                  <div class="pillar-icon"><i class="fa-solid fa-film"></i></div>
+                  <div class="pillar-text">
+                    <h5>Kinematik Highlight Rolik</h5>
+                    <p>Musiqaga mos dinamik 2-3 daqiqalik yorqin video.</p>
+                  </div>
+                </div>
+                <div class="pillar-item">
+                  <div class="pillar-icon"><i class="fa-solid fa-book-open"></i></div>
+                  <div class="pillar-text">
+                    <h5>Maxsus Foto Albom</h5>
+                    <p>Hajmi va sifatiga mos premium fotokitob.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tech-tags-grid">
+              <span class="tech-tag"><i class="fa-solid fa-check"></i> Bolalar bayrami</span>
+              <span class="tech-tag"><i class="fa-solid fa-check"></i> Yubiley tantanalari</span>
+              <span class="tech-tag"><i class="fa-solid fa-check"></i> Foto Albom xizmati</span>
+              <span class="tech-tag"><i class="fa-solid fa-check"></i> 1 kunlik (800K)</span>
+            </div>
+          </div>
+
+          <!-- Event Category 2: Katta Tadbirlar, To'ylar & Korporativlar -->
+          <div class="skill-category-card">
+            <div class="category-head">
+              <div class="category-icon">
+                <i class="fa-solid fa-users-viewfinder"></i>
+              </div>
+              <div>
+                <h3>Katta Tadbirlar, To'ylar & Korporativlar</h3>
+                <p>Kompaniya tadbirlari, forumlar, to'y marosimlari va konsertlar</p>
+              </div>
+            </div>
+
+            <div class="skill-items">
+              <p style="color: var(--text-muted); font-size: 0.92rem; line-height: 1.6;">
+                1 kunlik (800 000 so'm) yoki 2 kunlik (1 600 000 so'm) to'liq xizmat ko'rsatish doirasida tadbirning har bir bosqichini yuqori darajada tasvirga olamiz.
+              </p>
+              
+              <div class="about-pillars" style="margin-top: 0.5rem;">
+                <div class="pillar-item">
+                  <div class="pillar-icon"><i class="fa-solid fa-building"></i></div>
+                  <div class="pillar-text">
+                    <h5>Korporativ & Biznes Forum</h5>
+                    <p>Spikerlar nutqi, atmosfera va rasmiy roliklar.</p>
+                  </div>
+                </div>
+                <div class="pillar-item">
+                  <div class="pillar-icon"><i class="fa-solid fa-heart"></i></div>
+                  <div class="pillar-text">
+                    <h5>To'y va Tantanalar</h5>
+                    <p>Love Story, to'liq to'y filmi va premium albom.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tech-tags-grid">
+              <span class="tech-tag"><i class="fa-solid fa-check"></i> 1 Kunlik (800 000 so'm)</span>
+              <span class="tech-tag"><i class="fa-solid fa-check"></i> 2 Kunlik (1 600 000 so'm)</span>
+              <span class="tech-tag"><i class="fa-solid fa-check"></i> Drone aerotasvir</span>
+              <span class="tech-tag"><i class="fa-solid fa-check"></i> 4K DaVinci montaj</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         5. SKILLS & SERVICES (DASTURLASH, VIDEOGRAFIYA & QO'SHIMCHA XIZMATLAR)
+         ======================================================================== -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-sliders"></i> Xizmatlar & Mahorat</span>
+          <h2 class="section-title">Dasturlash, Videografiya va <span class="text-gold-gradient">Logo Xizmati</span></h2>
+          <p class="section-subtitle">Eng zamonaviy vositalar, dasturlash freymvorklari va brending xizmatlari majmuasi.</p>
+        </div>
+
+        <div class="skills-container">
+          <!-- Development Category -->
+          <div class="skill-category-card">
+            <div class="category-head">
+              <div class="category-icon">
+                <i class="fa-solid fa-laptop-code"></i>
+              </div>
+              <div>
+                <h3>Dasturlash & Web Ishlanmalar</h3>
+                <p>Eng kamida $100 dan boshlanuvchi sifatli saytlar</p>
+              </div>
+            </div>
+
+            <div class="skill-items">
+              <div class="skill-bar-wrap">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-brands fa-html5"></i> Frontend (HTML5, CSS3, JavaScript ES6+)</span>
+                  <span class="skill-pct">98%</span>
+                </div>
+                <div class="progress-track"><div class="progress-fill" style="width: 98%;"></div></div>
+              </div>
+
+              <div class="skill-bar-wrap">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-brands fa-react"></i> React / Next.js / Vue.js</span>
+                  <span class="skill-pct">92%</span>
+                </div>
+                <div class="progress-track"><div class="progress-fill" style="width: 92%;"></div></div>
+              </div>
+
+              <div class="skill-bar-wrap">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-solid fa-mobile-screen-button"></i> Mobile-First Responsive Dizayn</span>
+                  <span class="skill-pct">100%</span>
+                </div>
+                <div class="progress-track"><div class="progress-fill" style="width: 100%;"></div></div>
+              </div>
+
+              <div class="skill-bar-wrap">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-solid fa-server"></i> Backend, REST API & Database</span>
+                  <span class="skill-pct">88%</span>
+                </div>
+                <div class="progress-track"><div class="progress-fill" style="width: 88%;"></div></div>
+              </div>
+
+              <div class="skill-bar-wrap">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-brands fa-github"></i> GitHub Pages, Git & Cloud Hosting</span>
+                  <span class="skill-pct">96%</span>
+                </div>
+                <div class="progress-track"><div class="progress-fill" style="width: 96%;"></div></div>
+              </div>
+            </div>
+
+            <div class="tech-tags-grid">
+              <span class="tech-tag">Boshlang'ich narx: $100</span>
+              <span class="tech-tag">Tailwind CSS</span>
+              <span class="tech-tag">TypeScript</span>
+              <span class="tech-tag">SEO Pro</span>
+              <span class="tech-tag">Payme / Click API</span>
+            </div>
+          </div>
+
+          <!-- Videography & Branding Category -->
+          <div class="skill-category-card">
+            <div class="category-head">
+              <div class="category-icon">
+                <i class="fa-solid fa-video"></i>
+              </div>
+              <div>
+                <h3>Videografiya, Logo & Albom</h3>
+                <p>1 kunlik (800K), 2 kunlik (1.6M), Logo ($20+) va Albom</p>
+              </div>
+            </div>
+
+            <div class="skill-items">
+              <div class="skill-bar-wrap">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-solid fa-scissors"></i> Professional 4K Video Montaj</span>
+                  <span class="skill-pct">97%</span>
+                </div>
+                <div class="progress-track"><div class="progress-fill" style="width: 97%;"></div></div>
+              </div>
+
+              <div class="skill-bar-wrap">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-solid fa-palette"></i> DaVinci Resolve Color Grading (Rang tahriri)</span>
+                  <span class="skill-pct">94%</span>
+                </div>
+                <div class="progress-track"><div class="progress-fill" style="width: 94%;"></div></div>
+              </div>
+
+              <div class="skill-bar-wrap">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-solid fa-wand-magic-sparkles"></i> Professional Logo Yasash (Dizayn)</span>
+                  <span class="skill-pct">96%</span>
+                </div>
+                <div class="progress-track"><div class="progress-fill" style="width: 96%;"></div></div>
+              </div>
+
+              <div class="skill-bar-wrap">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-solid fa-book-open"></i> Sifatli Foto Albom / Kitob Tayyorlash</span>
+                  <span class="skill-pct">95%</span>
+                </div>
+                <div class="progress-track"><div class="progress-fill" style="width: 95%;"></div></div>
+              </div>
+
+              <div class="skill-bar-wrap">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-solid fa-mobile"></i> SMM Reels, Shorts & TikTok Kontent</span>
+                  <span class="skill-pct">99%</span>
+                </div>
+                <div class="progress-track"><div class="progress-fill" style="width: 99%;"></div></div>
+              </div>
+            </div>
+
+            <div class="tech-tags-grid">
+              <span class="tech-tag">Logo dizayn: $20 dan</span>
+              <span class="tech-tag">Albom: Hajmi & Sifatiga qarab</span>
+              <span class="tech-tag">1 kunlik: 800 000 so'm</span>
+              <span class="tech-tag">2 kunlik: 1 600 000 so'm</span>
+              <span class="tech-tag">Drone 4K</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         6. PORTFOLIO SHOWCASE
+         ======================================================================== -->
+    <section class="section" id="portfolio">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-layer-group"></i> Saralangan Loyihalar</span>
+          <h2 class="section-title">Biz Yaratgan <span class="text-gold-gradient">Muvaffaqiyatlar</span></h2>
+          <p class="section-subtitle">Dasturlash, tadbirlar videografiyasi, tug'ilgan kunlar va logo dizaynlari namunalari.</p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="portfolio-filter">
+          <button class="filter-btn active" data-filter="all">Barchasi</button>
+          <button class="filter-btn" data-filter="events">Tadbirlar & Tug'ilgan Kun</button>
+          <button class="filter-btn" data-filter="dev">Dasturlash (min $100)</button>
+          <button class="filter-btn" data-filter="branding">Logo & Albom</button>
+          <button class="filter-btn" data-filter="video">Reklama & Reels</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="portfolio-grid">
+          <!-- Card 1: Tug'ilgan kun & Tadbir -->
+          <div class="project-card" data-category="events">
+            <div class="project-thumb">
+              <div class="project-thumb-visual" style="background: radial-gradient(circle, rgba(245,158,11,0.25) 0%, #0d1422 80%);">
+                <i class="fa-solid fa-cake-candles" style="font-size: 3.5rem; color: #f59e0b; margin-bottom: 0.6rem;"></i>
+                <span class="badge-gold">Tug'ilgan Kun & Highlight Film</span>
+              </div>
+              <span class="project-category-badge">Tadbir & Bayram</span>
+              <div class="project-overlay">
+                <button class="project-action-btn project-preview-trigger" data-id="7" title="Videoni ko'rish">
+                  <i class="fa-solid fa-play"></i>
+                </button>
+              </div>
+            </div>
+            <div class="project-info">
+              <h4>Tantanali Tug'ilgan Kun Videofilmi</h4>
+              <p>4K formatda tasvirga olingan, samimiy damlar va musiqiy highlight montajli tug'ilgan kun roligi.</p>
+              <div class="project-tags">
+                <span>1 Kunlik Syomka</span>
+                <span>800 000 so'm</span>
+                <span>Reels + Film</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Katta Korporativ Tadbir -->
+          <div class="project-card" data-category="events">
+            <div class="project-thumb">
+              <div class="project-thumb-visual" style="background: radial-gradient(circle, rgba(212,175,55,0.25) 0%, #0d1422 80%);">
+                <i class="fa-solid fa-champagne-glasses" style="font-size: 3.5rem; color: var(--gold-mid); margin-bottom: 0.6rem;"></i>
+                <span class="badge-gold">2 Kunlik Katta Tadbir</span>
+              </div>
+              <span class="project-category-badge">Tadbir & Forum</span>
+              <div class="project-overlay">
+                <button class="project-action-btn project-preview-trigger" data-id="8" title="Videoni ko'rish">
+                  <i class="fa-solid fa-play"></i>
+                </button>
+              </div>
+            </div>
+            <div class="project-info">
+              <h4>Xalqaro Biznes Forum & Kecha</h4>
+              <p>2 kunlik keng masshtabli tadbir syomkasi, spikerlar nutqi va rasmiy bayramona rolik.</p>
+              <div class="project-tags">
+                <span>2 Kunlik Syomka</span>
+                <span>1 600 000 so'm</span>
+                <span>Drone 4K</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Logo Dizayn & Brending -->
+          <div class="project-card" data-category="branding">
+            <div class="project-thumb">
+              <div class="project-thumb-visual" style="background: radial-gradient(circle, rgba(56,189,248,0.25) 0%, #0d1422 80%);">
+                <i class="fa-solid fa-wand-magic-sparkles" style="font-size: 3.5rem; color: var(--cyan-accent); margin-bottom: 0.6rem;"></i>
+                <span class="badge-gold">Logo Dizayn ($20+)</span>
+              </div>
+              <span class="project-category-badge">Logo & Brending</span>
+              <div class="project-overlay">
+                <button class="project-action-btn project-preview-trigger" data-id="9" title="Detallarni ko'rish">
+                  <i class="fa-solid fa-eye"></i>
+                </button>
+              </div>
+            </div>
+            <div class="project-info">
+              <h4>Premium Brend Uchun Vektor Logo Dizayn</h4>
+              <p>Vektor formatlar (SVG, PNG, AI, EPS), dark va light versiyalar, 3D mockup va brendbook.</p>
+              <div class="project-tags">
+                <span>$20 dan boshlanadi</span>
+                <span>Vektor</span>
+                <span>3D Mockup</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4: Dasturlash E-Commerce -->
+          <div class="project-card" data-category="dev">
+            <div class="project-thumb">
+              <div class="project-thumb-visual" style="background: radial-gradient(circle, rgba(212,175,55,0.2) 0%, #0d1422 80%);">
+                <i class="fa-solid fa-cart-shopping" style="font-size: 3.5rem; color: var(--gold-primary); margin-bottom: 0.6rem;"></i>
+                <span class="badge-gold">Online Shop & Payme</span>
+              </div>
+              <span class="project-category-badge">Dasturlash</span>
+              <div class="project-overlay">
+                <button class="project-action-btn project-preview-trigger" data-id="1" title="Loyihani ko'rish">
+                  <i class="fa-solid fa-eye"></i>
+                </button>
+              </div>
+            </div>
+            <div class="project-info">
+              <h4>Luxury E-Commerce Platformasi</h4>
+              <p>Tezkor buyurtma tizimi, Stripe va Payme to'lov integratsiyasi va to'liq boshqaruv paneli.</p>
+              <div class="project-tags">
+                <span>React</span>
+                <span>Node.js</span>
+                <span>Payme API</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 5: Promo Rolik -->
+          <div class="project-card" data-category="video">
+            <div class="project-thumb">
+              <div class="project-thumb-visual" style="background: radial-gradient(circle, rgba(212,175,55,0.25) 0%, #0d1422 80%);">
+                <i class="fa-solid fa-film" style="font-size: 3.5rem; color: var(--gold-mid); margin-bottom: 0.6rem;"></i>
+                <span class="badge-gold">4K Cinema Commercial</span>
+              </div>
+              <span class="project-category-badge">Videografiya</span>
+              <div class="project-overlay">
+                <button class="project-action-btn project-preview-trigger" data-id="3" title="Videoni ko'rish">
+                  <i class="fa-solid fa-play"></i>
+                </button>
+              </div>
+            </div>
+            <div class="project-info">
+              <h4>Brend Uchun Kinematik Promo Rolik</h4>
+              <p>4K formatda tasvirga olingan, DaVinci Resolve da professional rang berilgan 60 soniyalik promo video.</p>
+              <div class="project-tags">
+                <span>DaVinci Resolve</span>
+                <span>Color Grading</span>
+                <span>4K HDR</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 6: Dynamic Reels -->
+          <div class="project-card" data-category="video">
+            <div class="project-thumb">
+              <div class="project-thumb-visual" style="background: radial-gradient(circle, rgba(168,85,247,0.25) 0%, #0d1422 80%);">
+                <i class="fa-solid fa-mobile-screen" style="font-size: 3.5rem; color: var(--purple-accent); margin-bottom: 0.6rem;"></i>
+                <span class="badge-gold">Viral Reels & Shorts</span>
+              </div>
+              <span class="project-category-badge">Videografiya</span>
+              <div class="project-overlay">
+                <button class="project-action-btn project-preview-trigger" data-id="4" title="Videoni ko'rish">
+                  <i class="fa-solid fa-play"></i>
+                </button>
+              </div>
+            </div>
+            <div class="project-info">
+              <h4>Dinamik SMM Reels & Shorts To'plami</h4>
+              <p>Auditoriyani 300% ga oshirgan 15 ta dinamik montajli virusli qisqa videolar seriyasi.</p>
+              <div class="project-tags">
+                <span>Premiere Pro</span>
+                <span>After Effects</span>
+                <span>Motion</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         7. MIJOZLAR IZOHLARI VA FIKRLARI (TESTIMONIALS / REVIEWS)
+         ======================================================================== -->
+    <section class="section" id="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-star"></i> Mijozlarimiz Fikrlari</span>
+          <h2 class="section-title">Biz Haqimizda <span class="text-gold-gradient">Nima Deyishadi?</span></h2>
+          <p class="section-subtitle">Xizmatlarimizdan foydalangan mijozlarimizning samimiy va haqqoniy sharhlari.</p>
+        </div>
+
+        <div class="testimonials-grid">
+          <!-- Review 1 -->
+          <div class="testimonial-card">
+            <i class="fa-solid fa-quote-right testimonial-quote-icon"></i>
+            <div class="testimonial-rating">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testimonial-text">
+              "O'g'limning 1 yosh tug'ilgan kunini 1 kunlik paketda syomka qildirgan edik. Natija shunchaki ajoyib! Reels video Instagramda juda ko'p qaraldi, xotira filmi esa butun oilamizga manzur bo'ldi. Behruzbekka katta rahmat!"
+            </p>
+            <div class="testimonial-client">
+              <div class="testimonial-avatar">SA</div>
+              <div class="testimonial-client-info">
+                <h5>Shahzod Aliyev</h5>
+                <span>1 Kunlik Tug'ilgan Kun Syomkasi (800 000 so'm)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 2 -->
+          <div class="testimonial-card">
+            <i class="fa-solid fa-quote-right testimonial-quote-icon"></i>
+            <div class="testimonial-rating">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testimonial-text">
+              "Kompaniyamiz uchun zamonaviy veb-sayt va brend logotipi kerak edi. Kod juda toza va sayt mobil telefonda ham chaqmoqdek tez ishlayapti. 100 dollar boshlang'ich narxiga nisbatan xizmat sifati 1000 dollarlikdek bo'ldi!"
+            </p>
+            <div class="testimonial-client">
+              <div class="testimonial-avatar">MK</div>
+              <div class="testimonial-client-info">
+                <h5>Madina Karimova</h5>
+                <span>Dasturlash & Logo Dizayn ($100 + $20)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 3 -->
+          <div class="testimonial-card">
+            <i class="fa-solid fa-quote-right testimonial-quote-icon"></i>
+            <div class="testimonial-rating">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testimonial-text">
+              "To'yimiz uchun 2 kunlik xizmat paketini tanladik (1 600 000 so'm). Syomka jarayonida ham, DaVinci rang montajida ham professionallik sezildi. Foto albom sifati ham juda qalin va oliy darajada chiqdi. Tavsiya qilaman!"
+            </p>
+            <div class="testimonial-client">
+              <div class="testimonial-avatar">JR</div>
+              <div class="testimonial-client-info">
+                <h5>Jamshid Rustamov</h5>
+                <span>2 Kunlik To'y Syomkasi & Premium Albom</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 4 -->
+          <div class="testimonial-card">
+            <i class="fa-solid fa-quote-right testimonial-quote-icon"></i>
+            <div class="testimonial-rating">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testimonial-text">
+              "Brendimiz uchun yangi logotip yasatdik ($20). 3 xil chiroyli variant tayyorlab berildi, 3D mockup ko'rinishi judayam yoqdi. Ishlariga mas'uliyat bilan yondashadilar, ishlash juda yoqimli bo'ldi."
+            </p>
+            <div class="testimonial-client">
+              <div class="testimonial-avatar">NY</div>
+              <div class="testimonial-client-info">
+                <h5>Nilufar Yusupova</h5>
+                <span>Professional Logo Yasash ($20)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 5 -->
+          <div class="testimonial-card">
+            <i class="fa-solid fa-quote-right testimonial-quote-icon"></i>
+            <div class="testimonial-rating">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testimonial-text">
+              "Xalqaro biznes forumimizni 2 kun davomida to'liq syomka qilib berishdi. Drone aerotasvirlari va spikerlar nutqining montaji juda sifatli. Kartadan to'lov qilish ham juda qulay bo'ldi, chekni Telegram orqali yubordik."
+            </p>
+            <div class="testimonial-client">
+              <div class="testimonial-avatar">SI</div>
+              <div class="testimonial-client-info">
+                <h5>Sardorbek Ikromov</h5>
+                <span>2 Kunlik Biznes Forum & Drone Syomka</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 6 -->
+          <div class="testimonial-card">
+            <i class="fa-solid fa-quote-right testimonial-quote-icon"></i>
+            <div class="testimonial-rating">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testimonial-text">
+              "Instagram sahifamiz uchun 5 ta dinamik Reels tayyorlatdik (500 000 so'm). Har bir rolik o'ziga jalb qiluvchi subtitrlar va ajoyib tovushlar bilan boyitilgan. Obunachilar soni sezilarli darajada oshdi!"
+            </p>
+            <div class="testimonial-client">
+              <div class="testimonial-avatar">DR</div>
+              <div class="testimonial-client-info">
+                <h5>Dilshod Rahimov</h5>
+                <span>SMM Reels Montaj Paketi (500 000 so'm)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive Comments Submission Form Box -->
+        <div class="comment-submission-box">
+          <div class="comment-form-header">
+            <span class="section-tag"><i class="fa-solid fa-pen-to-square"></i> Fikringiz Muhim</span>
+            <h3 class="comment-form-title">Sayt yoki Xizmatlarimiz Haqida <span class="text-gold-gradient">Izoh Qoldiring</span></h3>
+            <p class="comment-form-subtitle">Xizmatlarimiz sifatidan mamnun bo'lsangiz yoki taklifingiz bo'lsa, o'z sharhingizni qoldiring. Izohingiz darhol e'lon qilinadi.</p>
+          </div>
+
+          <form id="commentForm">
+            <div class="form-row-2">
+              <div class="form-group">
+                <label class="form-label" for="comment_author_name">Ismingiz va Familiyangiz *</label>
+                <input type="text" id="comment_author_name" class="form-input" placeholder="Masalan: Behruzbek" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="comment_service_tag">Qaysi xizmatimizdan foydalandingiz?</label>
+                <input type="text" id="comment_service_tag" class="form-input" placeholder="Masalan: 1 Kunlik Syomka / Web-Sayt / Logo">
+              </div>
+            </div>
+
+            <div class="form-row-2">
+              <div class="form-group">
+                <label class="form-label" for="comment_star_rating">Bahoingiz (Reyting) *</label>
+                <select id="comment_star_rating" class="form-select">
+                  <option value="5">⭐⭐⭐⭐⭐ (5/5) — Oliy darajada</option>
+                  <option value="4">⭐⭐⭐⭐ (4/5) — Yaxshi</option>
+                  <option value="3">⭐⭐⭐ (3/5) — Qoniqarli</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="comment_text_content">Izohingiz / Fikringiz *</label>
+              <textarea id="comment_text_content" class="form-textarea" placeholder="Samimiy fikringizni yozib qoldiring..." required style="min-height: 100px;"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+              <i class="fa-solid fa-paper-plane"></i> Izohimni Chop Etish
+            </button>
+          </form>
+
+          <!-- Custom User Comments Container -->
+          <div id="customCommentsList" class="testimonials-grid" style="margin-top: 2rem;"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         8. PRICING & ORDER PANELS (YANGILANGAN TARIFLAR, TO'LOV VA QO'SHIMCHA XIZMATLAR)
+         ======================================================================== -->
+    <section class="section" id="pricing">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-tag"></i> Rasmiy Tariflar & To'lov</span>
+          <h2 class="section-title">Aniq va Shaffof <span class="text-gold-gradient">Narxlar Paneli</span></h2>
+          <p class="section-subtitle">Videografiya (1 kun 800K / 2 kun 1.6M), Dasturlash (kamida $100), Logo ($20+) va Foto Albom xizmatlari.</p>
+        </div>
+
+        <!-- Pricing Category Switcher -->
+        <div class="pricing-tabs">
+          <button class="pricing-tab-btn active" data-tab="video">
+            <i class="fa-solid fa-video"></i> Videografiya & Tadbirlar
+          </button>
+          <button class="pricing-tab-btn" data-tab="dev">
+            <i class="fa-solid fa-code"></i> Dasturlash Paketlari (min. $100)
+          </button>
+          <button class="pricing-tab-btn" data-tab="branding">
+            <i class="fa-solid fa-wand-magic-sparkles"></i> Logo ($20+) & Albom
+          </button>
+        </div>
+
+        <!-- Videography Pricing Grid (1 kun: 800K, 2 kun: 1.6M, Qo'shimcha xizmatlar) -->
+        <div class="pricing-container-grid active" id="videoPricing">
+          <!-- 1 Kunlik Xizmat -->
+          <div class="pricing-card featured">
+            <span class="featured-ribbon">Eng Ommabop Xizmat</span>
+            <div class="pricing-header">
+              <h4>1 Kunlik Xizmat</h4>
+              <p>Tug'ilgan kunlar, shaxsiy bayramlar va 1 kunlik tadbirlar</p>
+              <div class="pricing-amount">800 000 so'm</div>
+              <span class="pricing-duration">To'liq 1 kunlik syomka & montaj</span>
+            </div>
+            <div class="pricing-features">
+              <div class="feature-item"><i class="fa-solid fa-check"></i> To'liq tadbir jarayonini 4K tasvirga olish</div>
+              <div class="feature-item"><i class="fa-solid fa-check"></i> 1 ta to'liq bayram filmi (Highlight) montaji</div>
+              <div class="feature-item"><i class="fa-solid fa-check"></i> 1-2 ta Instagram / TikTok Reels rolik</div>
+              <div class="feature-item"><i class="fa-solid fa-check"></i> DaVinci Resolve rang to'g'rilash (Color Grading)</div>
+              <div class="feature-item"><i class="fa-solid fa-check"></i> Professional audio yozish va musiqa tanlash</div>
+              <div class="feature-item"><i class="fa-solid fa-check"></i> 3-5 ish kunida tayyorlab topshirish</div>
+            </div>
+            <button class="btn btn-primary btn-order-package" data-package="1 Kunlik Xizmat (800 000 so'm)" data-type="video">
+              <i class="fa-solid fa-bolt"></i> 800 000 so'mga Buyurtma Berish
+            </button>
+          </div>
+
+          <!-- 2 Kunlik Xizmat -->
+          <div class="pricing-card featured" style="border-color: #38bdf8;">
+            <span class="featured-ribbon" style="background: linear-gradient(135deg, #38bdf8, #0284c7); color: #fff;">Katta Tadbirlar & To'ylar</span>
+            <div class="pricing-header">
+              <h4>2 Kunlik Xizmat</h4>
+              <p>Keng qamrovli to'ylar, forumlar va 2 kunlik korporativlar</p>
+              <div class="pricing-amount">1 600 000 so'm</div>
+              <span class="pricing-duration">To'liq 2 kunlik syomka & post-production</span>
+            </div>
+            <div class="pricing-features">
+              <div class="feature-item"><i class="fa-solid fa-check"></i> Ketma-ket 2 kun davomida to'liq 4K tasvirga olish</div>
+              <div class="feature-item"><i class="fa-solid fa-check"></i> Katta hajmli to'liq tadbir xotira filmi</div>
+              <div class="feature-item"><i class="fa-solid fa-check"></i> 3-5 ta dinamik Reels / Shorts roliklar to'plami</div>
+              <div class="feature-item"><i class="fa-solid fa-check"></i> Kinematik rang va ovoz ishlovi (Sound Design)</div>
+              <div class="feature-item"><i class="fa-solid fa-check"></i> Cloud orqali original sifatdagi fayllarni taqdim etish</div>
+              <div class="feature-item"><i class="fa-solid fa-check"></i> 5-7 ish kunida to'liq tayyorlash</div>
+            </div>
+            <button class="btn btn-primary btn-order-package" data-package="2 Kunlik Xizmat (1 600 000 so'm)" data-type="video" style="background: linear-gradient(135deg, #38bdf8, #0284c7); color: #fff;">
+              <i class="fa-solid fa-bolt"></i> 1 600 000 so'mga Buyurtma Berish
+            </button>
+          </div>
+
+          <!-- SMM Reels & Montaj -->
+          <div class="pricing-card">
+            <div class="pricing-header">
+              <h4>SMM Reels & Montaj</h4>
+              <p>Doimiy blogerlar, brendlar va biznes uchun kontent</p>
+              <div class="pricing-amount">500 000 so'm</div>
+              <span class="pricing-duration">5 ta tayyor vertikal Reels montaji</span>
+            </div>
+            <div class="pricing-features">
+              <div class="feature-item"><i class="fa-solid fa-check"></i> 5 ta trend va virusli montaj</div>
+              <div class="feature-item"><i class="fa-solid fa-check"></i> Animatsion chiroyli subtitrlar</div>
+              <div class="feature-item"><i class="fa-solid fa-check"></i> Rang to'g'rilash va maxsus sound effektlar</div>
+              <div class="feature-item"><i class="fa-solid fa-check"></i> 48 soat ichida tezkor tayyorlash</div>
+              <div class="feature-item"><i class="fa-solid fa-check"></i> Barcha ijtimoiy tarmoqlar uchun format</div>
+            </div>
+            <button class="btn btn-secondary btn-order-package" data-package="SMM Reels Montaj (500 000 so'm)" data-type="video">
+              Buyurtma berish
+            </button>
+          </div>
+        </div>
+
+        <!-- Development Pricing Grid (Eng kamida $100) -->
+        <div class="pricing-container-grid" id="devPricing">
+          <!-- Start Dev (Eng kamida $100) -->
+          <div class="pricing-card featured">
+            <span class="featured-ribbon">Boshlang'ich Paket</span>
+            <div class="pricing-header">
+              <h4>Start Landing Page</h4>
+              <p>Mahsulot yoki shaxsiy brend uchun 1-sahifali zamonaviy sayt</p>
+              <div class="pricing-amount">$100</div>
+              <span class="pricing-duration">Eng kamida $100 | 3-5 ish kuni</span>
+            </div>
+            <div class="pricing-features">
+              <div class="feature-item"><i class="fa-solid fa-check"></i> To'liq moslashuvchan (Mobil, Planshet, Desktop)</div>
+              <div class="feature-item"><i class="fa-solid fa-check"></i> Yuqori tezlikdagi toza HTML5 / CSS3 / JS kodi</div>
+              <div class="feature-item"><i class="fa-solid fa-check"></i> EmailJS orqali to'g'ridan-to'g'ri emailga xat</div>
+              <div class="feature-item"><i class="fa-solid fa-check"></i> GitHub Pages bepul serverga bepul o'rnatish</div>
+              <div class="feature-item"><i class="fa-solid fa-check"></i> Boshlang'ich SEO optimallashtirish</div>
+              <div class="feature-item"><i class="fa-solid fa-check"></i> 1 oylik bepul texnik qo'llab-quvvatlash</div>
+            </div>
+            <button class="btn btn-primary btn-order-package" data-package="Start Landing Page ($100)" data-type="dev">
+              <i class="fa-solid fa-code"></i> $100 ga Buyurtma Berish
+            </button>
+          </div>
+
+          <!-- Pro Dev -->
+          <div class="pricing-card">
+            <div class="pricing-header">
+              <h4>Pro Korporativ Sayt</h4>
+              <p>Kompaniyalar va nufuzli tashkilotlar uchun ko'p sahifali sayt</p>
+              <div class="pricing-amount">$250</div>
+              <span class="pricing-duration">Tayyor bo'lish: 7-10 ish kuni</span>
+            </div>
+            <div class="pricing-features">
+              <div class="feature-item"><i class="fa-solid fa-check"></i> 5-8 ta to'liq interaktiv sahifa</div>
+              <div class="feature-item"><i class="fa-solid fa-check"></i> Dark & Light rejimli luxury dizayn</div>
+              <div class="feature-item"><i class="fa-solid fa-check"></i> Kengaytirilgan SEO & Google PageSpeed 98+</div>
+              <div class="feature-item"><i class="fa-solid fa-check"></i> Payme / Click / Stripe to'lov integratsiyasi</div>
+              <div class="feature-item"><i class="fa-solid fa-check"></i> 256-Bit SSL sertifikat va xavfsizlik</div>
+              <div class="feature-item"><i class="fa-solid fa-check"></i> 3 oylik bepul texnik xizmat</div>
+            </div>
+            <button class="btn btn-secondary btn-order-package" data-package="Pro Korporativ Sayt ($250)" data-type="dev">
+              Buyurtma berish
+            </button>
+          </div>
+
+          <!-- Ultra Dev -->
+          <div class="pricing-card">
+            <div class="pricing-header">
+              <h4>Ultra Web Tizim</h4>
+              <p>Murakkab onlayn xizmatlar, CRM va e-commerce web platformalari</p>
+              <div class="pricing-amount">$500+</div>
+              <span class="pricing-duration">Tayyor bo'lish: 15-25 ish kuni</span>
+            </div>
+            <div class="pricing-features">
+              <div class="feature-item"><i class="fa-solid fa-check"></i> Full-Stack (React/Next.js + Node.js/Python)</div>
+              <div class="feature-item"><i class="fa-solid fa-check"></i> Shaxsiy kabinet, Admin panel va ma'lumotlar bazasi</div>
+              <div class="feature-item"><i class="fa-solid fa-check"></i> Murakkab API va avtomatlashtirilgan tizimlar</div>
+              <div class="feature-item"><i class="fa-solid fa-check"></i> Rasmiy NDA va qat'iy shartnoma kafolati</div>
+              <div class="feature-item"><i class="fa-solid fa-check"></i> 6 oylik kafolatlangan xizmat ko'rsatish</div>
+            </div>
+            <button class="btn btn-secondary btn-order-package" data-package="Ultra Web Tizim ($500+)" data-type="dev">
+              Buyurtma berish
+            </button>
+          </div>
+        </div>
+
+        <!-- Branding, Logo & Album Grid -->
+        <div class="pricing-container-grid" id="brandingPricing">
+          <!-- Logo Yasash -->
+          <div class="pricing-card featured">
+            <span class="featured-ribbon">Eksklyuziv Brending</span>
+            <div class="pricing-header">
+              <h4>Professional Logo Yasash</h4>
+              <p>Kompaniya, shaxsiy brend va blogerlar uchun unikal logo</p>
+              <div class="pricing-amount">$20+</div>
+              <span class="pricing-duration">$20 dan boshlanadi | 2-3 kunda tayyor</span>
+            </div>
+            <div class="pricing-features">
+              <div class="feature-item"><i class="fa-solid fa-check"></i> 2-3 xil unikal konsepsiya varianti</div>
+              <div class="feature-item"><i class="fa-solid fa-check"></i> Vektor formatlar (AI, SVG, EPS, PNG, PDF)</div>
+              <div class="feature-item"><i class="fa-solid fa-check"></i> 3D Luxury Mockup ko'rinishlari</div>
+              <div class="feature-item"><i class="fa-solid fa-check"></i> Qorong'u va ochiq fonlar uchun moslashuv</div>
+              <div class="feature-item"><i class="fa-solid fa-check"></i> Cheksiz kichik tahrirlar kiritish</div>
+            </div>
+            <button class="btn btn-primary btn-order-package" data-package="Logo Yasash Xizmati ($20+)" data-type="branding">
+              <i class="fa-solid fa-wand-magic-sparkles"></i> $20 dan Buyurtma Berish
+            </button>
+          </div>
+
+          <!-- Sifatli Foto Albom -->
+          <div class="pricing-card featured" style="border-color: #f59e0b;">
+            <span class="featured-ribbon" style="background: linear-gradient(135deg, #f59e0b, #d97706); color: #fff;">Premium Albom</span>
+            <div class="pricing-header">
+              <h4>Sifatli Foto Albom</h4>
+              <p>Tug'ilgan kunlar, to'ylar va tadbirlar uchun fotokitob</p>
+              <div class="pricing-amount" style="font-size: 1.6rem;">Kelishuv asosida</div>
+              <span class="pricing-duration">Hajmi va sifatiga qarab belgilanadi</span>
+            </div>
+            <div class="pricing-features">
+              <div class="feature-item"><i class="fa-solid fa-check"></i> Qalin ipak/charm muqovali fotokitob</div>
+              <div class="feature-item"><i class="fa-solid fa-check"></i> Yuqori sifatli fotosuratlar retushi</div>
+              <div class="feature-item"><i class="fa-solid fa-check"></i> Sahifalar soni (10 - 40 bet) tanlovi</div>
+              <div class="feature-item"><i class="fa-solid fa-check"></i> O'lchamlar (20x20, 25x25, 30x30 sm)</div>
+              <div class="feature-item"><i class="fa-solid fa-check"></i> Sifatiga qarab eng qulay narxlar</div>
+            </div>
+            <button class="btn btn-primary btn-order-package" data-package="Sifatli Foto Albom (Hajm/Sifatga qarab)" data-type="branding" style="background: linear-gradient(135deg, #f59e0b, #d97706); color: #fff;">
+              <i class="fa-solid fa-book-open"></i> Albom Buyurtma Qilish
+            </button>
+          </div>
+
+          <!-- To'liq Brending Paket -->
+          <div class="pricing-card">
+            <div class="pricing-header">
+              <h4>To'liq Media & Brending</h4>
+              <p>Logo + Sayt + Albom + Tadbir syomkasi kompleksi</p>
+              <div class="pricing-amount">Maxsus</div>
+              <span class="pricing-duration">Kompleks chegirma bilan</span>
+            </div>
+            <div class="pricing-features">
+              <div class="feature-item"><i class="fa-solid fa-check"></i> Professional Vektor Logo ($20+)</div>
+              <div class="feature-item"><i class="fa-solid fa-check"></i> Zamonaviy Veb-sayt ($100+)</div>
+              <div class="feature-item"><i class="fa-solid fa-check"></i> 1 yoki 2 kunlik 4K video syomka</div>
+              <div class="feature-item"><i class="fa-solid fa-check"></i> Premium Foto Albom tayyorlash</div>
+              <div class="feature-item"><i class="fa-solid fa-check"></i> Shaxsiy menejer va 24/7 yordam</div>
+            </div>
+            <button class="btn btn-secondary btn-order-package" data-package="To'liq Brending & Media Kompleks" data-type="branding">
+              Bog'lanish
+            </button>
+          </div>
+        </div>
+
+        <!-- Qo'shimcha Xizmatlar & To'lov haqida Eslatma -->
+        <div style="margin-top: 2rem; background: rgba(212, 175, 55, 0.08); border: 1px solid var(--border-gold); border-radius: var(--radius-lg); padding: 1.5rem 2rem; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1.2rem;">
+          <div style="display: flex; align-items: center; gap: 1.2rem; max-width: 800px;">
+            <div style="font-size: 2rem; color: var(--gold-primary);"><i class="fa-solid fa-circle-info"></i></div>
+            <div>
+              <h4 style="color: var(--gold-light); font-size: 1.1rem; margin-bottom: 0.2rem;">Qo'shimcha Xizmatlar, Albom va To'lovlar Haqida:</h4>
+              <p style="color: var(--text-muted); font-size: 0.88rem; margin: 0; line-height: 1.5;">
+                Asosiy paketlardan tashqari qo'shimcha xizmatlar (<strong>DJI Drone 4K aerotasvir</strong>, <strong>24 soatda shoshilinch montaj</strong>, <strong>albom hajmi va sifatiga mos tayyorlash</strong> yoki <strong>qo'shimcha soatlar</strong>) uchun talabga ko'ra qo'shimcha kelishilgan to'lov olinadi.
+              </p>
+            </div>
+          </div>
+          <!-- Payment Open Button -->
+          <button class="btn btn-payment btn-open-payment">
+            <i class="fa-solid fa-credit-card"></i> Karta orqali to'lov qilish
+          </button>
+        </div>
+
+        <!-- Custom Order Builder / Price Calculator -->
+        <div class="order-calculator-box" id="calculator">
+          <div class="calc-grid">
+            <div>
+              <h3 class="calc-options-title">
+                <i class="fa-solid fa-calculator" style="color: var(--gold-primary);"></i> Shaxsiy Buyurtma va Narx Kalkulyatori
+              </h3>
+              <p style="color: var(--text-muted); font-size: 0.88rem; margin-bottom: 1.2rem;">
+                Kerakli xizmatlarni tanlang — tizim bir zumda umumiy qiymatni hisoblab beradi:
+              </p>
+              <div class="calc-checkboxes">
+                <label class="calc-label">
+                  <input type="checkbox" class="calc-checkbox" data-price="800000" data-currency="so'm" data-days="4" data-name="1 Kunlik Xizmat (Tadbir/Tug'ilgan kun)" checked>
+                  <span>1 Kunlik Syomka (800 000 so'm)</span>
+                </label>
+                <label class="calc-label">
+                  <input type="checkbox" class="calc-checkbox" data-price="1600000" data-currency="so'm" data-days="6" data-name="2 Kunlik Xizmat (Katta Tadbir/To'y)">
+                  <span>2 Kunlik Syomka (1 600 000 so'm)</span>
+                </label>
+                <label class="calc-label">
+                  <input type="checkbox" class="calc-checkbox" data-price="1300000" data-currency="so'm" data-days="4" data-name="Dasturlash: Boshlang'ich Sayt (Eng kamida $100)">
+                  <span>Dasturlash Sayti (kamida $100)</span>
+                </label>
+                <label class="calc-label">
+                  <input type="checkbox" class="calc-checkbox" data-price="260000" data-currency="so'm" data-days="2" data-name="Professional Logo Yasash ($20+)">
+                  <span>Logo Yasash Xizmati ($20+)</span>
+                </label>
+                <label class="calc-label">
+                  <input type="checkbox" class="calc-checkbox" data-price="350000" data-currency="so'm" data-days="2" data-name="Qo'shimcha: DJI Drone 4K Aerotasvir">
+                  <span>Qo'shimcha: Drone 4K (+350K)</span>
+                </label>
+                <label class="calc-label">
+                  <input type="checkbox" class="calc-checkbox" data-price="250000" data-currency="so'm" data-days="1" data-name="Qo'shimcha: 24h Shoshilinch Montaj">
+                  <span>Qo'shimcha: Tezkor 24h (+250K)</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="calc-result-card">
+              <span class="calc-total-label">Hisoblangan Umumiy Qiymat:</span>
+              <div class="calc-total-price" id="calcTotalPrice">800 000 so'm</div>
+              <div class="calc-estimated-time" id="calcEstimatedTime">Taxminiy tayyor bo'lish: 3 - 5 kun</div>
+              <button class="btn btn-primary" id="btnBookCustomOrder" style="width: 100%; margin-bottom: 0.8rem;">
+                <i class="fa-solid fa-paper-plane"></i> Ushbu Byudjetda Buyurtma Berish
+              </button>
+              <button class="btn btn-payment btn-open-payment" style="width: 100%;">
+                <i class="fa-solid fa-credit-card"></i> Karta Raqamlar (To'lov Qilish)
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         9. EMAIL & CONTACT US PANEL (EMAILJS INTEGRATION READY)
+         ======================================================================== -->
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <!-- Quick Email Newsletter Box -->
+        <div class="newsletter-bar">
+          <div class="newsletter-text">
+            <h4><i class="fa-solid fa-paper-plane" style="color: var(--gold-primary); margin-right: 0.4rem;"></i> Loyihangiz bo'yicha bepul maslahat oling</h4>
+            <p>Emailingizni qoldiring va biz sizga 15 daqiqa ichida taklif va narxlar bo'yicha konsultatsiya yuboramiz.</p>
+          </div>
+          <form class="newsletter-form" id="newsletterForm">
+            <input type="email" class="newsletter-input" placeholder="Email manzilingizni kiriting..." required>
+            <button type="submit" class="btn btn-primary btn-sm">
+              <i class="fa-solid fa-paper-plane"></i> Jo'natish
+            </button>
+          </form>
+        </div>
+
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-envelope"></i> Contact Us</span>
+          <h2 class="section-title">Biz Bilan <span class="text-gold-gradient">Bog'laning</span></h2>
+          <p class="section-subtitle">Tadbirlar, tug'ilgan kunlar syomkasi, dasturlash yoki logo xizmati bo'yicha to'g'ridan-to'g'ri xabar qoldiring (EmailJS orqali to'g'ridan-to'g'ri pochtangizga yetib boradi).</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Direct Info with updated Phone, Telegram & Instagram -->
+          <div class="contact-info-wrap">
+            <h3>Keling, birgalikda <span class="text-gold-gradient">Ajoyib Loyiha</span> yaratamiz!</h3>
+            <p>
+              Biz har doim yangi takliflar, tadbirlar syomkasi, logo dizayn va dasturlash vazifalari uchun ochiqmiz.
+            </p>
+
+            <div class="direct-contact-list">
+              <!-- Direct Phone Updated -->
+              <a href="tel:+998947931114" class="direct-contact-item">
+                <div class="contact-icon-box" style="background: rgba(16, 185, 129, 0.15); color: #10b981;">
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                <div class="contact-item-text">
+                  <span>TELEFON RAQAM:</span>
+                  <strong style="color: #10b981;">+998 (94) 793-11-14</strong>
+                </div>
+              </a>
+
+              <!-- Telegram Link -->
+              <a href="https://t.me/Behruzbek_0875" target="_blank" rel="noopener noreferrer" class="direct-contact-item">
+                <div class="contact-icon-box" style="background: rgba(56, 189, 248, 0.15); color: #38bdf8;">
+                  <i class="fa-brands fa-telegram"></i>
+                </div>
+                <div class="contact-item-text">
+                  <span>TELEGRAM RASMIY MANZIL:</span>
+                  <strong style="color: #38bdf8;">@Behruzbek_0875</strong>
+                </div>
+              </a>
+
+              <!-- Instagram Link -->
+              <a href="https://www.instagram.com/behruzbek.ac?igsh=MWtzb3N0ZGNrMHk4cw==" target="_blank" rel="noopener noreferrer" class="direct-contact-item">
+                <div class="contact-icon-box" style="background: rgba(225, 48, 108, 0.15); color: #e1306c;">
+                  <i class="fa-brands fa-instagram"></i>
+                </div>
+                <div class="contact-item-text">
+                  <span>INSTAGRAM RASMIY PROFIL:</span>
+                  <strong style="color: #f472b6;">@behruzbek.ac</strong>
+                </div>
+              </a>
+
+              <!-- Email Link -->
+              <a href="mailto:info@luxmedia.uz" class="direct-contact-item">
+                <div class="contact-icon-box"><i class="fa-solid fa-envelope"></i></div>
+                <div class="contact-item-text">
+                  <span>RASMIY EMAIL:</span>
+                  <strong>info@luxmedia.uz / luxmedia.agency@gmail.com</strong>
+                </div>
+              </a>
+            </div>
+
+            <div style="margin-top: 0.5rem;">
+              <button class="btn btn-payment btn-open-payment" style="width: 100%;">
+                <i class="fa-solid fa-credit-card"></i> Karta Raqamlar (To'lov Qilish)
+              </button>
+            </div>
+
+            <div>
+              <span style="font-size: 0.85rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 0.7rem;">Ijtimoiy Tarmoqlar:</span>
+              <div class="social-links-row">
+                <a href="https://t.me/Behruzbek_0875" target="_blank" rel="noopener noreferrer" class="social-circle-btn" title="Telegram: @Behruzbek_0875"><i class="fa-brands fa-telegram"></i></a>
+                <a href="https://www.instagram.com/behruzbek.ac?igsh=MWtzb3N0ZGNrMHk4cw==" target="_blank" rel="noopener noreferrer" class="social-circle-btn" title="Instagram: @behruzbek.ac"><i class="fa-brands fa-instagram"></i></a>
+                <a href="tel:+998947931114" class="social-circle-btn" title="Qo'ng'iroq: +998 94 793 11 14"><i class="fa-solid fa-phone"></i></a>
+                <a href="mailto:info@luxmedia.uz" class="social-circle-btn" title="Email"><i class="fa-solid fa-envelope"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- ================================================================
+               EMAILJS "CONTACT US" FORM
+               Service ID: service_zxfcl9c | Template ID: men7kuj | Public Key: cj10oulfCwWgURt_K
+               ================================================================ -->
+          <div class="contact-form-card">
+            <form id="contactForm">
+              <div class="form-row-2">
+                <!-- Ism Maydoni -->
+                <div class="form-group">
+                  <label class="form-label" for="user_name">Ismingiz *</label>
+                  <input type="text" id="user_name" name="user_name" class="form-input" placeholder="Masalan: Behruz" required>
+                </div>
+                <!-- Pochta (Email) Maydoni -->
+                <div class="form-group">
+                  <label class="form-label" for="user_email">Email Pochtangiz *</label>
+                  <input type="email" id="user_email" name="user_email" class="form-input" placeholder="emailingiz@gmail.com" required>
+                </div>
+              </div>
+
+              <div class="form-row-2">
+                <!-- Telefon / Telegram -->
+                <div class="form-group">
+                  <label class="form-label" for="user_phone">Telefon raqam yoki Telegram username</label>
+                  <input type="text" id="user_phone" name="user_phone" class="form-input" placeholder="+998 94 793 11 14 yoki @username">
+                </div>
+                <!-- Xizmat Turi -->
+                <div class="form-group">
+                  <label class="form-label" for="service_type">Xizmat Yo'nalishi</label>
+                  <select id="service_type" name="service_type" class="form-select">
+                    <option value="1 Kunlik Syomka (800 000 so'm)">1 Kunlik Xizmat (800 000 so'm) — Tug'ilgan kun / Tadbir</option>
+                    <option value="2 Kunlik Syomka (1 600 000 so'm)">2 Kunlik Xizmat (1 600 000 so'm) — To'y / Katta Tadbir</option>
+                    <option value="Dasturlash (min $100)">Dasturlash & Web-Sayt (Eng kamida $100 dan)</option>
+                    <option value="Logo Dizayn ($20+)">Logo Yasash Xizmati ($20 dan boshlanadi)</option>
+                    <option value="Foto Albom">Sifatli Foto Albom (Hajm va sifatiga qarab)</option>
+                    <option value="SMM Reels Montaj">SMM Reels & Video Montaj (500 000 so'm)</option>
+                    <option value="Maxsus Buyurtma">Maxsus Shaxsiy Buyurtma & Qo'shimcha Xizmatlar</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Xabar Maydoni -->
+              <div class="form-group">
+                <label class="form-label" for="message">Xabaringiz / Loyiha Haqida Ma'lumot *</label>
+                <textarea id="message" name="message" class="form-textarea" placeholder="Tadbir sanasi, formati, talablaringiz yoki tayyor bo'lish muddatini batafsil yozing..." required></textarea>
+              </div>
+
+              <!-- Yuborish Tugmasi -->
+              <button type="submit" class="btn btn-primary" id="contactSubmitBtn" style="width: 100%;">
+                <i class="fa-solid fa-paper-plane"></i> Xabarni Yuborish
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Footer Divider & Copyright -->
+        <div class="footer-divider">
+          <div class="footer-credits">
+            © 2026 <strong>LUX MEDIA</strong> (Behruzbek). Barcha huquqlar himoyalangan. Tel: +998 (94) 793-11-14.
+          </div>
+          <div class="footer-links">
+            <a href="https://t.me/Behruzbek_0875" target="_blank" rel="noopener noreferrer">Telegram: @Behruzbek_0875</a>
+            <a href="https://www.instagram.com/behruzbek.ac?igsh=MWtzb3N0ZGNrMHk4cw==" target="_blank" rel="noopener noreferrer">Instagram: @behruzbek.ac</a>
+            <a href="tel:+998947931114">Tel: +998 94 793 11 14</a>
+            <a href="#about">Men haqimda</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================
+         10. PAYMENT MODAL (HUMO, VISA, MASTERCARD & CHEK TELEGRAM)
+         ======================================================================== -->
+  <div class="modal-backdrop" id="paymentModal">
+    <div class="payment-modal-card">
+      <button class="modal-close-btn" id="paymentModalCloseBtn" aria-label="Yopish">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div class="payment-header">
+        <span class="section-tag" style="margin-bottom: 0.5rem;"><i class="fa-solid fa-shield-check"></i> Xavfsiz To'lov</span>
+        <h3>LUX MEDIA Rasmiy To'lov Kartalari</h3>
+        <p style="color: var(--text-muted); font-size: 0.88rem;">To'lovni amalga oshirish uchun qulay karta raqamidan nusxa oling:</p>
+      </div>
+
+      <div class="payment-cards-list">
+        <!-- Card 1: HUMO -->
+        <div class="bank-card-item">
+          <div class="bank-card-top">
+            <div class="bank-card-brand humo">
+              <i class="fa-solid fa-credit-card"></i> HUMO KARTA
+            </div>
+            <span class="bank-card-owner-tag"><i class="fa-solid fa-user-check"></i> Egasi: O.B. (BEHRUZBEK)</span>
+          </div>
+          <div class="bank-card-number-row">
+            <span class="bank-card-number" id="humoCardNum">9860 1266 0260 3964</span>
+            <button class="btn-copy-card" onclick="copyCardText('9860126602603964', 'Humo karta raqami')">
+              <i class="fa-solid fa-copy"></i> Nusxalash
+            </button>
+          </div>
+        </div>
+
+        <!-- Card 2: VISA -->
+        <div class="bank-card-item">
+          <div class="bank-card-top">
+            <div class="bank-card-brand visa">
+              <i class="fa-brands fa-cc-visa"></i> VISA KARTA
+            </div>
+            <span class="bank-card-owner-tag"><i class="fa-solid fa-user-check"></i> Egasi: O.B. (BEHRUZBEK)</span>
+          </div>
+          <div class="bank-card-number-row">
+            <span class="bank-card-number" id="visaCardNum">4023 0602 1753 4428</span>
+            <button class="btn-copy-card" onclick="copyCardText('4023060217534428', 'Visa karta raqami')">
+              <i class="fa-solid fa-copy"></i> Nusxalash
+            </button>
+          </div>
+        </div>
+
+        <!-- Card 3: MASTERCARD -->
+        <div class="bank-card-item">
+          <div class="bank-card-top">
+            <div class="bank-card-brand master">
+              <i class="fa-brands fa-cc-mastercard"></i> MASTERCARD
+            </div>
+            <span class="bank-card-owner-tag"><i class="fa-solid fa-user-check"></i> Egasi: O.B. (BEHRUZBEK)</span>
+          </div>
+          <div class="bank-card-number-row">
+            <span class="bank-card-number" id="masterCardNum">5476 3816 7779 1244</span>
+            <button class="btn-copy-card" onclick="copyCardText('5476381677791244', 'MasterCard raqami')">
+              <i class="fa-solid fa-copy"></i> Nusxalash
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Payment Confirmation Instruction Box -->
+      <div class="payment-instruction-box">
+        <i class="fa-solid fa-circle-exclamation" style="color: #38bdf8; margin-right: 0.4rem;"></i>
+        <strong>TO'LOV QILGANDAN SO'NG:</strong> Iltimos, to'lov cheki va telefon raqamingizni Telegram orqali yuboring hamda buyurtmangiz aynan qaysi kunga tayyor bo'lishi kerakligini yozib qoldiring.
+      </div>
+
+      <div class="payment-telegram-cta">
+        <!-- "To'lov Qildim" CTA button leading to Telegram with ready prefilled text -->
+        <a href="https://t.me/Behruzbek_0875?text=Assalomu%20alaykum%20Behruzbek!%20Men%20to%27lov%20qildim.%20Mana%20to%27lov%20cheki%20va%20telefon%20raqamim.%20Buyurtma%20tayyor%20bo%27lishi%20kerak%20bo%27lgan%20kun:" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="font-size: 1.05rem; padding: 1rem 1.8rem;">
+          <i class="fa-brands fa-telegram" style="font-size: 1.3rem;"></i> To'lov Qildim (Chek & Telefon Yuborish)
+        </a>
+        <span style="font-size: 0.78rem; color: var(--text-muted);">Tugmani bosganingizda to'g'ridan-to'g'ri Telegram: @Behruzbek_0875 ochiladi</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       11. PROJECT PREVIEW MODAL
+       ======================================================================== -->
+  <div class="modal-backdrop" id="projectModal">
+    <div class="modal-card">
+      <button class="modal-close-btn" id="modalCloseBtn" aria-label="Yopish">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div id="modalPreviewMedia" style="margin-bottom: 1.5rem;"></div>
+      <span class="badge-gold" id="modalCategory" style="margin-bottom: 0.5rem; display: inline-block;">Kategoriya</span>
+      <h3 id="modalTitle" style="font-size: 1.5rem; color: var(--heading-color); margin-bottom: 0.8rem;">Loyiha Nomi</h3>
+      <p id="modalDescription" style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; margin-bottom: 1.5rem;">Loyiha tavsifi</p>
+      <div id="modalTags" style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.5rem;"></div>
+      <a href="#contact" class="btn btn-primary btn-sm" onclick="document.getElementById('projectModal').classList.remove('active'); document.body.classList.remove('modal-open');">
+        <i class="fa-solid fa-bolt"></i> Shunga o'xshash xizmatga buyurtma berish
+      </a>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       12. FLOATING QUICK CONTACT BUTTON ("BOG'LANISH" - TEL: +998 94 793 11 14)
+       ======================================================================== -->
+  <a href="tel:+998947931114" class="floating-contact-btn" id="floatingContactBtn" title="Biz bilan bog'lanish: +998 (94) 793-11-14">
+    <div class="floating-contact-icon-wrap">
+      <i class="fa-solid fa-phone-volume"></i>
+    </div>
+    <span>Bog'lanish</span>
+  </a>
+
+  <!-- Main JavaScript File -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
